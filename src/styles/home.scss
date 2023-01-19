@@ -1,0 +1,181 @@
+@import "colors";
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: $second;
+    color: white;
+    border-radius: 0px 0px 200px 200px;
+
+    >main {
+        position: absolute;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        justify-content: center;
+
+        >h1 {
+            font-weight: 400;
+            font-size: 6rem;
+            font-family: $text1;
+            color: $second;
+        }
+
+        >p {
+            font-weight: 900;
+            font-size: 1.2rem;
+            font-family: $text1;
+            color: $second;
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 90%;
+        position: absolute;
+        background: no-repeat center/auto url("../assets/1.webp3.jpg");
+    }
+}
+
+.home2 {
+    height: 100vh;
+    width: 100%;
+    background-color: $second;
+    padding: 500px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+
+    >img {
+        height: 23rem;
+        animation: imgU 0.5s linear infinite alternate;
+    }
+
+    >div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        height: 100vh;
+
+        p {
+            color: $first;
+            letter-spacing: 4px;
+            word-spacing: 8px;
+            font-weight: 100;
+            font-family: fantasy;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.home3 {
+    width: 100%;
+    height: 120vh;
+    background-color: $second;
+    margin-top: -200px;
+    display: flex;
+
+    >div {
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        border-radius: 0px 200px 200px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+
+        >h1 {
+            text-transform: uppercase;
+            border-bottom: 2px solid $dark;
+            padding: 0.5rem;
+            width: 15rem;
+            color: $dark;
+        }
+
+        >p {
+            padding: 5rem;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            line-height: 170%;
+            font: 400 1.2rem fantasy;
+        }
+    }
+}
+
+.home4 {
+    width: 100%;
+    height: 100vh;
+    background-color: $second;
+    display: flex;
+    justify-content: flex-end;
+    
+
+    >div {
+        background-color: $third;
+        border-radius: 200px 0 0 200px;
+        width: 70%;
+        height: 70vh;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        >h1 {
+            color: $first;
+            text-transform: uppercase;
+            width: 140px;
+            border-bottom: 2px solid $first;
+            padding: 0.5rem;
+        }
+
+        >article {
+            display: flex;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            >div {
+                margin: 1rem;
+                height: 10rem;
+                width: 10rem;
+                background-color: $first;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: $dark;
+                transition: all 0.5s;
+                animation: imgU 1.5s linear infinite alternate;
+
+                &:hover {
+                    filter: invert(1);
+                }
+                >svg{
+                    font-size: 4rem;
+                }
+                >p{
+                    font: 900 1.2rem fantasy;
+                }
+            }
+        }
+    }
+}
+
+@keyframes imgU {
+    to {
+        transform: translateY(-20px);
+    }
+}
