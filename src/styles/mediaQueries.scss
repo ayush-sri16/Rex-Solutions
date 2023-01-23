@@ -7,7 +7,7 @@
 
     .home3>div {
         width: 77%;
-        height: 84vh;
+        height: 100vh;
         padding: 1rem;
     }
 
@@ -68,22 +68,22 @@
     }
 
     .home2 {
-        margin-top: -260px;
-        height: 10vh;
+        margin-top: -100px;
         flex-direction: column;
 
-        img {
+        >img {
             width: 100%;
         }
 
         >div {
             width: 100%;
-            padding: 2rem;
+            padding: 2rem 1rem 9rem 1rem;
         }
     }
 
+
     .home3 {
-        height: 84vh;
+        height: 100vh;
 
         >div {
             text-align: center;
@@ -104,7 +104,6 @@
             width: 100%;
             border-radius: 0px;
 
-            // height: unset;
             >article {
                 >div {
                     height: 8rem;
@@ -130,22 +129,85 @@
             }
         }
     }
-    .contact>main{
+
+    .contact>main {
         padding: 1rem;
-        >h1{
+
+        >h1 {
             margin: 1rem;
         }
-        >form{
+
+        >form {
             margin: 0%;
-            >div{
+
+            >div {
                 width: 100%;
-                >label{
+
+                >label {
                     display: none;
                 }
-                >input{
+
+                >input {
                     width: 100%;
                 }
             }
         }
+    }
+}
+
+
+
+@media screen and (max-width: 390px) {
+    .home2 {
+        margin-top: -170px;
+    }
+
+    .home3 {
+        margin-top: 0px;
+
+        >div {
+            padding-top: 27rem;
+            padding-bottom: 30rem;
+
+            >p {
+                padding: 2rem 1.2rem;
+            }
+        }
+    }
+
+    .home4 {
+        height: 78vh;
+
+        >div {
+            height: 78vh;
+
+            >article {
+                >div {
+                    height: 7rem;
+                    width: 7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .home3 {
+        >div {
+            padding-top: 34rem;
+
+            >p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .home4>div>article>div>p {
+        display: none;
+    }
+
+    .home4>div>article>div {
+        height: 4rem;
+        width: 4rem;
     }
 }

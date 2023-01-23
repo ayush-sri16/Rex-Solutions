@@ -35,20 +35,20 @@ const Home = () => {
                 <div>
                     <h1>Brands</h1>
                     <article>
-                        <div style={{animationDelay:"0.3s"}}>
-                            <AiFillGoogleCircle/>
+                        <div style={{ animationDelay: "0.3s" }}>
+                            <AiFillGoogleCircle />
                             <p>Google</p>
                         </div>
-                        <div style={{animationDelay:"0.5s"}}>
-                            <AiFillAmazonCircle/>
+                        <div style={{ animationDelay: "0.5s" }}>
+                            <AiFillAmazonCircle />
                             <p>Amazon</p>
                         </div>
-                        <div style={{animationDelay:"0.7s"}}>
-                            <AiFillYoutube/>
+                        <div style={{ animationDelay: "0.7s" }}>
+                            <AiFillYoutube />
                             <p>Youtube</p>
                         </div>
-                        <div style={{animationDelay:"1s"}}>
-                            <AiFillInstagram/>
+                        <div style={{ animationDelay: "1s" }}>
+                            <AiFillInstagram />
                             <p>Instagram</p>
                         </div>
                     </article>

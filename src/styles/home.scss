@@ -79,32 +79,31 @@
 
 .home3 {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-color: $second;
     margin-top: -200px;
     display: flex;
+    align-items: center;
 
     >div {
         width: 70%;
-        height: 100vh;
+        height: 80vh;
         background-color: white;
         border-radius: 0px 200px 200px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
 
         >h1 {
             text-transform: uppercase;
             border-bottom: 2px solid $dark;
-            padding: 0.5rem;
             width: 17rem;
             color: $dark;
         }
 
         >p {
-            padding: 5rem;
+            padding: 2rem 5rem;
             letter-spacing: 3px;
             word-spacing: 6px;
             line-height: 170%;
@@ -121,7 +120,7 @@
     background-color: $second;
     display: flex;
     justify-content: flex-end;
-    
+
 
     >div {
         background-color: $third;
@@ -165,10 +164,12 @@
                 &:hover {
                     filter: invert(1);
                 }
-                >svg{
+
+                >svg {
                     font-size: 4rem;
                 }
-                >p{
+
+                >p {
                     font: 900 1.2rem sans-serif;
                 }
             }
